@@ -1,0 +1,27 @@
+{
+    "position": "bottom",
+    "height": 30,
+    "exclusive": false,
+    "layer": "top",
+    "modules-left": [],
+    "modules-center": ["clock#time", "clock#date", "battery", "hyprland/workspaces"],
+    "modules-right": [],
+
+    "clock#time": {
+        "format": "Time:  {:%H:%M}"
+    },
+
+    "clock#date": {
+        "format": "Date:  {:%d.%m.%Y}"
+    },
+
+    "battery": {
+        "format": "Battery:  {capacity}%",
+        "format-charging": "Battery: +{capacity}%"
+    },
+
+    "hyprland/workspaces": {
+        "format": "Workspace:  {name}",
+        "active-only": true
+    }
+}

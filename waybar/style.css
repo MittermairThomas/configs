@@ -1,0 +1,17 @@
+* {
+    font-family: JetBrains Mono;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;        
+}
+
+#clock.time, #clock.date, #battery, #workspaces button {
+    color: #cdd6f4;
+    background-color: rgba(49, 50, 68, 0.7);
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    padding: 1px 4px;
+    margin: 0 5px;
+}
