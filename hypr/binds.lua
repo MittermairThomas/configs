@@ -18,8 +18,9 @@ hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"))
 
 --Visuals
-hl.bind("XF86MOnBrightnessDown", hl.dsp.exec_cmd("brightnessctl -d amdgpu_bl1 set 5%-"))
-hl.bind("XF86MOnBrightnessUp",   hl.dsp.exec_cmd("brightnessctl -d amdgpu_bl1 set +5%"))
+hl.bind("XF86MOnBrightnessDown",               hl.dsp.exec_cmd("brightnessctl -d amdgpu_bl1 set 5%-"))
+hl.bind("XF86MOnBrightnessUp",                 hl.dsp.exec_cmd("brightnessctl -d amdgpu_bl1 set +5%"))
+hl.bind(mainMod .. " + XF86MOnBrightnessDown", hl.dsp.exec_cmd("pkill hyprsunset; hyprsunset --temperature 4500"))
 
 --Focus
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
